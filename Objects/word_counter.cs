@@ -20,7 +20,7 @@ namespace WordCounter.Objects
     //gets the inputted word from the user
     public string GetUserWord()
     {
-      return _userWord.ToLower();
+      return _userWord;
     }
 
     //gets the inputted sentence from the user
@@ -39,7 +39,7 @@ namespace WordCounter.Objects
       for (int i = 0; i < splitSentence.Length; i++)
       {
         //checks the single word in the array to the single word the user inputted
-        if (splitSentence[i] == _userWord)
+        if (splitSentence[i] == _userWord.ToLower())
         {
           //adds 1 to the wordsCounted variable
           _wordsCounted += 1;

@@ -33,5 +33,19 @@ namespace WordCounter.Objects
       //assert
       Assert.Equal(2, newRepeatCounter.CountRepeats());
     }
+
+    [Fact]
+    public void WordCount_MatchesWithUpperLowerCaseLetters_2()
+    {
+      //arrange
+      string testSingleWord = "LoNg";
+      string testSentence = "ThE lOnG rOaD was Made Longer By THE LoNG dAY.";
+
+      //act
+      RepeatCounter newRepeatCounter = new RepeatCounter(testSingleWord, testSentence);
+
+      //assert
+      Assert.Equal(2, newRepeatCounter.CountRepeats());
+    }
   }
 }
