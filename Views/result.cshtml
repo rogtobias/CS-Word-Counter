@@ -1,0 +1,16 @@
+@{
+  Layout = "Shared/_Layout.cshtml";
+}
+
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+  <h4>You've enter a sentence!</h4>
+  <p>Your sentence: @Model.GetUserSentence()</p>
+  <p>Your word: @Model.GetUserWord()</p>
+  <p>Your sentence repeats the word @Model.GetUserWord() @Model.CountRepeats() time(s).</p>
+</div>
+
+<p><a href="/">Home</a></p>
