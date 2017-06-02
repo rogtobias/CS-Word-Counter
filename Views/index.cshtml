@@ -1,0 +1,17 @@
+@{
+  Layout = "Shared/_Layout.cshtml";
+}
+
+<div class="container">
+  <form action="/result" method="post">
+    <label for="word">Enter your single word to find: </label>
+    <input type="text" name="word">
+    <br>
+    <br>
+    <label for="sentence">Enter your sentence to be searched: </label>
+    <input type="text" name="sentence">
+    <br>
+    <br>
+    <button type="submit" name="btn btn-primary">Submit</button>
+  </form>
+</div>
