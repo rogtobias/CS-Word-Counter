@@ -21,8 +21,9 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 ## Specs
 
 * _If the user doesn't input both a word and a sentence to be checked, and doesn't click submit, nothing happens.(ex. input:(left blank) => output: nothing)_
-* _If the user inputs a single word in the word to be checked field and a sentence without a matching single word, the output will be zero matching words.(ex. input:(single word):sun, input:(sentence):See Spot run. => output: 0)_
-* _If the user inputs a single word in the word to be checked field and a sentence containing the word, the output will count how many times that word is repeated in the sentence.(ex. input:(single word):day, input:(sentence):The day was sunny, but the day wasn't bright. => output:2)_
+* _If the user inputs a single word in the word to be checked field and a sentence without a matching single word, the output will be zero matching words.(ex. input:(single word):sun, input:(sentence):See Spot run.:submit => output: 0)_
+* _If the user inputs a single word in the word to be checked field and a sentence containing the word, the output will count how many times that word is repeated in the sentence.(ex. input:(single word):day, input:(sentence):The day was sunny, but the day wasn't bright.:submit => output:2)_
+* _If the user inputs a single word in the word to be checked field and/ or a sentence that has both upper and lower case letters. The app will still produce the correct output.(ex. input:(single word):LoNg, input:(sentence):ThE lOnG rOaD was Made Longer By THE LoNG dAY.:submit => output:2)
 
 
 ## Known Bugs
