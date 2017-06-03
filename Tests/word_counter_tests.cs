@@ -47,5 +47,19 @@ namespace WordCounter.Objects
       //assert
       Assert.Equal(2, newRepeatCounter.CountRepeats());
     }
+
+    [Fact]
+    public void WordCount_Matches_5()
+    {
+      //arrange
+      string testSingleWord = "log";
+      string testSentence = "log log log log log";
+
+      //act
+      RepeatCounter newRepeatCounter = new RepeatCounter(testSingleWord, testSentence);
+
+      //assert
+      Assert.Equal(5, newRepeatCounter.CountRepeats());
+    }
   }
 }

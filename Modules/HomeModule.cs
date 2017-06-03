@@ -1,7 +1,7 @@
 using Nancy;
 using WordCounter.Objects;
 
-namespace WordCounter.Objects
+namespace WordCounterView
 {
   public class HomeModule : NancyModule
   {
