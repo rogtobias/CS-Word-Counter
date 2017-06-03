@@ -26,7 +26,9 @@ _This application will take in a word from a user and then a sentence. It will t
 
 ## Known Bugs
 
-_There is a bug. Only the test words from the test file will be counted if the user happens to use one of those words. When the user puts in a word that's not in the tests, the counted words return 0 after going through the for loop and then if statement. Ironically the user word is being put into the proper variable and as well with the sentence. The sentence has been confirmed to be put into an array, but the CountRepeats function won't run on the user's inputted word, unless its one of the test words._
+_There is a bug. Only the test words from the test file will be counted if the user happens to use one of those words. When the user puts in a word that's not in the tests, the counted words return 0 after going through the for loop and then if statement. Ironically the user word is being put into the proper variable and as well with the sentence. The sentence has been confirmed to be put into an array, but the CountRepeats function won't run on the user's inputted word, unless its one of the test words.
+
+Bug has been fixed. There was a whitespace after the inputted word, so I trimmed the user's inputted word. It also brought light to punctuation, so I replace commas, periods, and question marks with no space. It won't be able to handle more punctuation without RegEx._
 
 ## Support and contact details
 

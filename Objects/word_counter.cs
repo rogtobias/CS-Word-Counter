@@ -34,23 +34,19 @@ namespace WordCounter.Objects
     {
       //
       //splits the sentence the user inputted into an array
-      string[] splitSentence = _userSentence.ToLower().Split(' ');
-      //Console.WriteLine(splitSentence.Length);
+      string[] splitSentence = _userSentence.ToLower().Replace(",", "").Replace(".", "").Replace("?", "").Split(' ');
+
       //loops through the inputted sentence to find matches
       for (int i = 0; i < splitSentence.Length; i++)
       {
-        //Console.WriteLine(splitSentence[i]);
         //checks the single word in the array to the single word the user inputted
-        if (splitSentence[i] == _userWord.ToLower())
+        if (splitSentence[i] == _userWord.ToLower().TrimStart().TrimEnd())
         {
           //adds 1 to the wordsCounted variable
           _wordsCounted += 1;
-          Console.WriteLine(_wordsCounted);
         }
       }
       //returns the counted wordsCounted
-      Console.WriteLine(_userWord);
-      Console.WriteLine(_wordsCounted);
       return _wordsCounted;
     }
   }
